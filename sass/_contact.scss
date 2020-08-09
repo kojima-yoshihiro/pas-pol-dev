@@ -1,0 +1,120 @@
+#contact {
+  .container {
+
+    #backtop {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background: url(../img/backTop@2x.png) no-repeat center;
+      background-size: cover;
+      border: none;
+      display: block;
+      margin: 0 auto;
+      margin-top: -25px;
+      &:hover {
+        position: relative;
+        top: -5px;
+      }
+    }
+
+    .contact-inner {
+      padding: 5px 0 30px;
+
+      .contact-menu {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+
+        .contact-item {
+          width: calc((100% - 10px) / 2 );
+          &:nth-child(2n) {
+            margin-right: 0;
+          }
+          margin-bottom: 10px;
+          height: 46px;
+          text-align: center;
+          line-height: 50px;
+          transition: all 0.2s ease;
+        }
+        .face {
+          border: 1px solid #4871A9;
+          a {
+            color: #4871A9;
+          }
+          &:hover {
+            background: #4871A9;
+            a {
+              color: #fff;
+            }
+          }
+        }
+        .twi {
+          border: 1px solid #6FBDD3;
+          a {
+            color: #6FBDD3;
+          }
+          &:hover {
+            background: #6FBDD3;
+            a {
+              color: #fff;
+            }
+          }
+        }
+        .hatena {
+          border: 1px solid #2F9BCD;
+          a {
+            color: #2F9BCD;
+          }
+          &:hover {
+            background: #2F9BCD;
+            a {
+              color: #fff;
+            }
+          }
+        }
+        .line {
+          border: 1px solid #8FBF9D;
+          a {
+            color: #8FBF9D;
+          }
+          &:hover {
+            background: #8FBF9D;
+            a {
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width:580px) {
+  #contact {
+    .container {
+      .contact-inner {
+        .contact-menu {
+          flex-flow: nowrap;
+          max-width: 550px;
+          margin: 0 auto;
+
+          .contact-item {
+            margin-right: 30px;
+            &:nth-child(2n) {
+              margin-right: 30px;
+            }
+            &:nth-child(3n) {
+              margin-right: 0px;
+
+            }
+          }
+
+          .line {
+            display: none;
+          }
+
+        }
+      }
+    }
+  }
+}
